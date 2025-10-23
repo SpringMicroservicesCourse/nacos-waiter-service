@@ -135,6 +135,8 @@ spring.jpa.hibernate.ddl-auto=none
 # 監控配置
 management.endpoints.web.exposure.include=*
 management.endpoint.health.show-details=always
+# 確保 Info 端點顯示所有 info.* 屬性，這是 Spring Boot 3.x 的行為，在 Spring Boot 2.x 中不需要這個設定
+management.info.env.enabled=true
 ```
 
 ### 重要配置說明
